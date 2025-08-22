@@ -31,8 +31,9 @@ pip install jokesdb
 ```python
 get_jokes(number=1, category="all")
 ```
-number: Number of random jokes to get. | (Default = 1)
-category: What category to get jokes from. Categories: all, and those available at https://code2craft.xyz/jokesdb/cat.json or using [catfile()](#3get-catjson-file) | (Default = "all")
+Parameters:**
+- `number`: Number of random jokes to get (Default = 1)
+- `category`: Category to get jokes from. Categories: all, or those available at [cat.json](https://code2craft.xyz/jokesdb/cat.json) or via `catfile()` (Default = "all")
 
 Example of use:
 ```python
@@ -48,7 +49,7 @@ joke_of_the_day()
 ```
 Example of use:
 ```python
-from jokesdb import get_jokes
+from jokesdb import joke_of_the_day
 
 todays_joke = joke_of_the_day()
 print(todays_joke)
