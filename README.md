@@ -2,6 +2,21 @@
 
 A simple Python module to fetch jokes from my website.
 
+## Chapters
+- [Links](#links)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [1. Get jokes randomly](#1-get-jokes-randomly)
+  - [2. Get today's joke](#2-get-todays-joke)
+  - [3. Get cat.json file](#3-get-catjson-file)
+- [Requirements](#requirements)
+- [License](#license)
+
+## Links
+- [Docs](https://code2craft.xyz/jokesdb/docs.html)
+- [Website](https://code2craft.xyz)
+- [Source code](https://github.com/gamercristi11/jokesdb)
+
 ## Installation
 
 ```sh
@@ -10,11 +25,45 @@ pip install jokesdb
 
 ## Usage
 
-```python
-import jokesdb
+### 1. Get jokes randomly
 
-joke = jokesdb.get_joke()
+```python
+get_jokes(number=1, category="all")
+```
+number: Number of random jokes to get. | (Default = 1)
+category: What category to get jokes from. Categories: all, and those available at https://code2craft.xyz/jokesdb/cat.json or using [catfile()](#3get-catjson-file) | (Default = "all")
+
+Example of use:
+```python
+from jokesdb import get_jokes
+
+joke = get_jokes()
 print(joke)
+```
+### 2. Get todays joke
+
+```python
+joke_of_the_day()
+```
+Example of use:
+```python
+from jokesdb import get_jokes
+
+todays_joke = joke_of_the_day()
+print(todays_joke)
+```
+
+### 3. Get cat.json file
+```python
+catfile()
+```
+
+Example of use:
+```python
+from jokesdb import catfile
+
+catfile = catfile()
+print(catfile)
 ```
 
 ## Requirements
