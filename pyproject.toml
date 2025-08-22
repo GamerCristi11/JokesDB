@@ -15,6 +15,7 @@ authors = [
 urls = { 
     "Homepage" = "https://code2craft.xyz",
     "Source" = "https://github.com/gamercristi11/JokesDB"
+    "Docs" = "https://code2craft.xyz/jokesdb/docs.html"
 }
 dependencies = [
     "requests"
