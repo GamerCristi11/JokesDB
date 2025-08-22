@@ -21,3 +21,6 @@ print(joke)
 
 - Python 3.6+
 - requests
+
+## License
+MIT License
