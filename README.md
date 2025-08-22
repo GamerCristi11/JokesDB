@@ -13,6 +13,7 @@ A simple Python module to fetch jokes from my website.
 - [License](#license)
 
 ## Links
+- [PyPI Project Page](https://pypi.org/project/JokesDB/)
 - [Docs](https://code2craft.xyz/jokesdb/docs.html)
 - [Website](https://code2craft.xyz)
 - [Source code](https://github.com/gamercristi11/jokesdb)
